@@ -67,6 +67,11 @@ int main() {
                 cout << "\nСортировка по номеру и стоимости (Quick sort):\n";
                 printCalls(calls, size);
                 break;
+            case 7: { // Новый пункт меню
+                double avgCost = calculateAverageCostPerSecond(calls, size);
+                cout << "Средняя стоимость секунды разговора: " << avgCost << " руб.\n";
+                break;
+            }
             case 0:
                 cout << "Выход из программы." << endl;
                 break;
